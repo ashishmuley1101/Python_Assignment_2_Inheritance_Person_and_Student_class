@@ -39,8 +39,12 @@ class Student(Person):
         print("Student section : ", self.section)
 
 
-# initialized the attributes values
+# Instantiation and initialized the attributes values
 person = Person("Bridgelabz", 27)
 
 # Calling the display() method from Person class
 person.display()
+
+# UC 5. student object via an instantiation on the Student class and then test the displayStudent method.
+Student = Student("Vikram", 16, "A")
+Student.displayStudent()
