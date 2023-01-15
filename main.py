@@ -23,6 +23,13 @@ class Person:
         print("Person name : ", self.name)
         print("Person age : ", self.age)
 
+# UC 3. Create a child class Student  which inherits from the Person class and which also has a section attribute.
+class Student(Person):
+
+    # attribute : section
+    section = ""
+
+
 # initialized the attributes values
 person = Person("Bridgelabz",27)
 
