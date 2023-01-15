@@ -29,9 +29,18 @@ class Student(Person):
     # attribute : section
     section = ""
 
+    # UC 4. displayStudent() that displays the name, age and section of an object created via the Student class.
+    def __init__(self, name, age, section):
+        Person.__init__(self, name, age)
+        self.section = section
+    def displayStudent(self):
+        print("Student name : ", self.name)
+        print("Student age : ", self.age)
+        print("Student section : ", self.section)
+
 
 # initialized the attributes values
-person = Person("Bridgelabz",27)
+person = Person("Bridgelabz", 27)
 
 # Calling the display() method from Person class
 person.display()
