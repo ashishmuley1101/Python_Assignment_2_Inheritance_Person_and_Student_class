@@ -8,7 +8,7 @@
 
 
 # UC 1. Person class with attributes: name and age of type string.
-class person:
+class Person:
 
     # attributes
     name = ""
@@ -17,3 +17,14 @@ class person:
     def __init__(self, name, age):
         self.name = name
         self.age = age
+
+    # UC 2. display() method that displays the name and age of an object created via the Person class.
+    def display(self):
+        print("Person name : ", self.name)
+        print("Person age : ", self.age)
+
+# initialized the attributes values
+person = Person("Bridgelabz",27)
+
+# Calling the display() method from Person class
+person.display()
